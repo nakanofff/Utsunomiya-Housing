@@ -11,7 +11,7 @@
   url("mainimage2.jpg");
 		background-size: cover;
 	}
-	90%{
+	80%{
 		background: linear-gradient(90deg,rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)),
   url("mainimage3.jpg");
 		background-size: cover;
@@ -29,15 +29,20 @@ body{
 }
 header{
 	position: fixed;
-	z-index: 20;
+	z-index: 200;
 	width: 16%;
 	height: 100%;
-	background: linear-gradient(90deg,rgba(0, 0, 0, .2), rgba(255, 255, 255, .4)),
-  url("texture524_11.jpg");
-	background-size: cover;
+	
 }
 header nav ul{
 	padding: 0;
+}
+.menu{
+	position: fixed;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("three.jpg");
 }
 .menu-text{
 	color: #ffffff;
@@ -46,7 +51,7 @@ header nav ul{
 	padding-left: 8px;
 }
 .menu-text a{
-	color: #ffffff;
+	color: #272121;
 	text-decoration: none;
 	font-size: 16px;
 	font-family: 'Noto Serif JP', serif;
@@ -57,15 +62,31 @@ header nav ul{
 	height: 100vh;
 	position: relative;
 }
+.menu-bottun{
+	position: fixed;
+	z-index: 20;
+	top: 10%;
+	left: 0;
+	width: 6vw;
+	height: 16vh;
+	background-color: #272121;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.menu-bottun h3{
+	color: #ffffff;
+	-ms-writing-mode: tb-rl;
+  	writing-mode: vertical-rl;
+	font-family: 'Noto Serif JP', serif;
+}
 .main-image{
 	background-size: cover;
 	width: 100vw;
 	height: 80vh;
 	position: absolute;
 	bottom: 0;
-	animation-name: slideshow;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
+	animation: slideshow 20s infinite;
 	animation-timing-function: ease;
 }
 .main-logo{
@@ -74,7 +95,7 @@ header nav ul{
 	top: 10%;
 	right: 5%;
 	-ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
+  	writing-mode: vertical-rl;
 }
 .main-logo h1{
 	font-family: 'Noto Serif JP', serif;
@@ -105,12 +126,16 @@ header nav ul{
 	-ms-writing-mode: tb-rl;
   	writing-mode: vertical-rl;
 	font-family: 'Noto Serif JP', serif;
+	color: #272121;
+	
 }
 .about-text h3{
 	line-height: 56px;
+	color: #272121;
 }
 .about-text p{
 	line-height: 40px;
+	color: #272121;
 }
 .service{
 	width: 100vw;
@@ -120,39 +145,52 @@ header nav ul{
 	display: flex;
 }
 .out-background{
-	width: 50vw;
+	width: 60vw;
 	height: 50vh;
 	background-image: url("mainimage.png");
 	background-size: cover;
 }
-.out-content-wrapper{
-	width: 50vw;
+.out-content{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.out-content-wrapper{
+	width: 40vw;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+    padding: 0;
 }
 .out-content-wrapper li{
 	-ms-writing-mode: tb-rl;
   	writing-mode: vertical-rl;
 	font-family: 'Noto Serif JP', serif;
-
+	color: #272121;
 }
 .in{
 	display: flex;
+}
+.in-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .in-content-wrapper{
 	width: 50vw;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
+	padding: 0;
 }
 .in-content-wrapper li{
 	-ms-writing-mode: tb-rl;
   	writing-mode: vertical-rl;
 	font-family: 'Noto Serif JP', serif;
+	color: #272121;
 }
 .in-background{
-	width: 50vw;
+	width: 60vw;
 	height: 50vh;
 	background-image: url("mainimage.png");
 	background-size: cover;
@@ -162,12 +200,19 @@ header nav ul{
 	width: 100vw;
 	height: 100vh;
 	display: flex;
+	justify-content: center;
 }
 .map-background{
 	width: 50vw;
 	height: 100vh;
 }
 .adress{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46vw;
+}
+.adress-wrapper{
 	-ms-writing-mode: tb-rl;
   	writing-mode: vertical-rl;
 	display: flex;
@@ -176,14 +221,32 @@ header nav ul{
 	align-items: center;
 	
 }
-.adress p{
+.adress-wrapper p,.adress-wrapper h2{
 	font-family: 'Noto Serif JP', serif;
+}
+iframe{
+	height: 100vh;
+	width: 54vw;
+}
+
+.works{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.works-content{
+	-ms-writing-mode: tb-rl;
+  	writing-mode: vertical-rl;
+	font-family: 'Noto Serif JP', serif;
+	color: #272121;
 }
 
 footer{
 	width: 100vw;
 	height: 16vh;
-	background-color: #000000;
+	background-color: #272121;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;

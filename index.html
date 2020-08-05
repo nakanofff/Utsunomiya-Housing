@@ -8,6 +8,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css" media="all" >
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="menu.js"></script>
 <script>
 	new WOW().init();
 	</script>
@@ -15,7 +16,7 @@
 
 <body>
 	<header class="wow slideLeft">
-	<nav>
+	<nav class="menu">
 		<ul>
 		    <li class="menu-text"><a href="#">ホーム</a></li>
 			<li class="menu-text"><a href="#">弊社について</a></li>
@@ -23,12 +24,16 @@
 			<li class="menu-text"><a href="#">アクセス</a></li>
 			<li class="menu-text"><a href="#">実務例</a></li>
 		</ul>
+		<p class="close-bottun">close</p>
 		</nav>
 	</header>
 	
 	<section class="home">
 	<div class="main-image">
 		
+		</div>
+		<div class="menu-bottun wow fadeInLeft">
+		<h3>メニュー</h3>
 		</div>
 		
 		<div class="main-logo wow fadeInRight">
@@ -49,47 +54,63 @@
   			実用新案登録済みテーブル（セット六〇〇〇〇円）</p>
 			
 		</div>
-		<div class="section-title">
+		<div class="section-title wow fadeIn">
 			<h2>弊社について</h2>
 		</div>
 	</section>
 	
 	<section class="service">
 		<div class="out">
-			<div class="out-background"></div>
-			<ul class="out-content-wrapper">
-				<li>ベランダ</li>
-				<li>バルコニー</li>
-				<li>カーポート</li>
-				<li>ベランダ</li>
-				<li>ブロック工事</li>
-				<li>外装塗装</li>
-			</ul>
+			<div class="out-background wow fadeInRight"></div>
+				<div class="out-content wow fadeInLeft">
+					<ul class="out-content-wrapper">
+					<li>ベランダ</li>
+					<li>バルコニー</li>
+					<li>カーポート</li>
+					<li>ベランダ</li>
+					<li>ブロック工事</li>
+					<li>外装塗装</li>
+					</ul>
+			</div>
+			<div class="section-title">
+				<h2>サービス内容</h2>
+			</div>
 		</div>
 		
 		<div class="in">
-			<ul class="in-content-wrapper">
-				<li>新築工事</li>
-				<li>リフォーム</li>
-				<li>トイレ工事</li>
-				<li>台所（システムキッチン）</li>
-				<li>ユニット</li>
-			</ul>
-			<div class="in-background"></div>
+			<div class="in-content wow fadeInRight">
+					<ul class="in-content-wrapper">
+						<li>新築工事</li>
+						<li>リフォーム</li>
+						<li>トイレ工事</li>
+						<li>台所（システムキッチン）</li>
+						<li>ユニット</li>
+					</ul>
+			</div>
+			<div class="in-background wow fadeInLeft"></div>
 		</div>
 	</section>
 	
 	<section class="access">
-		<div class="map-background"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6597.328786353207!2d132.6904242!3d34.2315867!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35500de4166177e7%3A0xa4bb438e59d760c!2z5a6H6YO95a6u5L2P5a6F!5e0!3m2!1sja!2sjp!4v1596635018062!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 		<div class="adress">
-		<p>〒七六七三ー二六〇三</p>
-		<p>広島県呉市川尻町一ー六ー一一宇都宮住宅（宇都宮勲）</p>
-		<p>(〇八二三ー八七ー六一〇〇)</p>
+			<div class="adress-wrapper">
+			<h2>住所・連絡先</h2>
+			<p>〒七六七三ー二六〇三</p>
+			<p>広島県呉市川尻町一ー六ー一一宇都宮住宅（宇都宮勲）</p>
+			<p>(〇八二三ー八七ー六一〇〇)</p>
+			</div>
 </div>
 	</section>
 	
 	<section class="works">
-	
+		<div class="works-content">
+		<p>東広島　ストックヤード<br>
+           呉　内外装オールリフォーム</p>
+		</div>
+		<div class="section-title">
+			<h2>実務例</h2>
+		</div>
 	</section>
 	
 	<footer>
